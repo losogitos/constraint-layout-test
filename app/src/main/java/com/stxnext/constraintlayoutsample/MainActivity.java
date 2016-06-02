@@ -1,5 +1,6 @@
 package com.stxnext.constraintlayoutsample;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
         percentActivityButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "Percentage activity clicked.");
+                Intent intent = new Intent(MainActivity.this, PercentageActivity.class);
+                startActivity(intent);
             }
         });
 
