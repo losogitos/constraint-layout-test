@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayout">
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        app:layout_constraintLeft_toLeftOf="@+id/button10"
+        app:layout_constraintTop_toBottomOf="@+id/button10"
+        android:layout_marginTop="46dp"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button10"
+        app:layout_constraintLeft_toLeftOf="@+id/button11"
+        app:layout_constraintTop_toBottomOf="@+id/button11"
+        android:layout_marginTop="43dp"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button11"
+        app:layout_constraintLeft_toLeftOf="@+id/constraintLayout"
+        android:layout_marginLeft="120dp"
+        android:layout_marginStart="120dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        android:layout_marginTop="4dp"
+        tools:layout_constraintTop_creator="1" />
+</android.support.constraint.ConstraintLayout>
