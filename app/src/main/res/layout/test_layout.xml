@@ -7,30 +7,44 @@
     android:layout_height="match_parent"
     android:id="@+id/constraintLayout2">
 
-    <Button
-        android:text="Button"
+    <TextView
+        android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button8"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout2"
-        app:layout_constraintRight_toRightOf="@+id/constraintLayout2"
-        app:layout_constraintBottom_toTopOf="@+id/textView17" />
+        tools:layout_editor_absoluteY="67dp"
+        android:id="@+id/textView19"
+        app:layout_constraintLeft_toLeftOf="@+id/checkBox" />
 
     <TextView
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteY="120dp"
-        android:id="@+id/textView17"
-        app:layout_constraintLeft_toLeftOf="@+id/button8" />
+        android:id="@+id/textView20"
+        tools:layout_editor_absoluteY="91dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView19" />
 
-    <android.support.constraint.Guideline
+    <Button
+        android:text="Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/guideline7"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="0dp"
-        app:relativePercent="22" />
+        tools:layout_editor_absoluteY="115dp"
+        android:id="@+id/button15"
+        app:layout_constraintLeft_toLeftOf="@+id/textView20" />
 
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButton"
+        app:layout_constraintLeft_toLeftOf="@+id/button15"
+        app:layout_constraintTop_toBottomOf="@+id/button15"
+        android:layout_marginTop="24dp" />
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="27dp" />
 </android.support.constraint.ConstraintLayout>
